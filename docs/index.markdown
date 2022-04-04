@@ -2,12 +2,10 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: default
 ---
 
-# Issie
-
-## What is Issie
+# What is Issie
 
 Issie (Interactive Schematic Simulator and Integrated Editor) is a very easy to use and capable hierarchical block schematic based digital logic editor and simulator, originally made for the 1st year undergraduate Digital Electronics and Computer Architecture module at the Department of Electronic and Electrical Engineering, Imperial College London, by 3rd year students at the same institution.
 
