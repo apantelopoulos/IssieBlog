@@ -26,11 +26,16 @@ baseurl: "/IssieBlog" # the subpath of your site, e.g. /blog
 url: "https://apantelopoulos.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+show_downloads: true
 
 # Build settings
 theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
+
+github:
+  windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
+  macos: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5.dmg
 
 
 # Exclude from processing.
