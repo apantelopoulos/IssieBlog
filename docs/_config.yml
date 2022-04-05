@@ -37,6 +37,10 @@ github:
   windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
   macos: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5.dmg
 
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
