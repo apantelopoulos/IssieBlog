@@ -29,9 +29,10 @@ github_username:  jekyll
 show_downloads: true
 
 # Build settings
-theme: jekyll-theme-architect
+remote_theme: pages-themes/architect@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 github:
   windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
