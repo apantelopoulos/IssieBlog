@@ -44,7 +44,7 @@ max-width: 100%;
 #main-content h2 {
     margin-bottom: 8px;
     font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
     color: #474747;
     text-indent: 4px;
@@ -56,3 +56,50 @@ max-width: 100%;
     content: "//";
     color: #9ddcff;
     }
+
+#main-content h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #474747;
+    text-indent: 3px;
+    }
+    
+#main-content h3:before {
+    padding-right: 0.3em;
+    margin-left: -2em;
+    content: "///";
+    color: #9ddcff;
+    }
+
+a.button small {
+    display: block;
+    font-size: 14px;
+    }
+
+a.blogbutton {
+    width: 134px;
+    height: 58px;
+    padding-top: 22px;
+    padding-left: 68px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #fff;
+    }
+
+a.blogbutton small {
+    display: block;
+    font-size: 14px;
+    }
+
+aside a.blogbutton {
+    display: block;
+    width: 138px;
+    padding-left: 74px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    background: transparent url(../images/blogbutton.png) 0 0 no-repeat;
+}

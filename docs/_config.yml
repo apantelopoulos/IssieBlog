@@ -36,6 +36,7 @@ plugins:
 github:
   windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
   macos: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5.dmg
+  blog: https://github.com/tomcl/issie/wiki/Issie-Blog
 
 markdown: kramdown
 
