@@ -6,13 +6,9 @@ layout: default
 title: "Home" 
 ---
 
-# Contents
-{:.no_toc}
-
-- TOC
-{:toc}
 
 # What is Issie
+{:.no_toc}
 
 **I**nteractive **S**chematic **S**imulator and **I**ntegrated **E**ditor **(ISSIE)** is a very easy to use and capable hierarchical block schematic based digital logic editor and simulator, originally made for the 1st year undergraduate Digital Electronics and Computer Architecture module at the Department of Electronic and Electrical Engineering, Imperial College London, by 3rd year students at the same institution.
 
@@ -21,6 +17,14 @@ Issie has been well tested on designs with up to 15,000 schematic components. We
 Issie is coded in F# transpiled to Javascript by [FABLE](https://www.fable.com), and uses a pure F# drawing library.
 
 # Key Features
+{:.no_toc}
+
+## Contents
+{:.no_toc}
+
+- TOC
+{:toc}
+
 
 ## Component Library
 
@@ -87,15 +91,9 @@ ISSIE allows users to directly edit the contents of Memory components, for more 
 <img src="img/memoryEditor.png" alt="Catalog" width="70%" height="70%"/>
 </p>
 
-# User Guide
-
-**PENDING**
-
-# Developer Info
-
-**PENDING**
 
 # Acknowledgements
+{:.no_toc}
 
 - Marco Selvatici for the 8K lines of base code written for his 3rd year BEng FYP
 - Edoardo Santi for work improving Issie over Summer 2020.
@@ -105,5 +103,6 @@ ISSIE allows users to directly edit the contents of Memory components, for more 
 - All 2020/2021 1st year undergraduate students of the EEE department, Imperial College London, for acting as unpaid beta-testers!
 
 # Contact
+{:.no_toc}
 
 If you encounter any problems using or downloading the software, please see the [Gihub Issue](https://github.com/tomcl/issie/issues) page, or [create a new issue](https://github.com/tomcl/issie/issues/new) on the ISSIE GitHub repository. Any feedback and suggestions are also welcome!

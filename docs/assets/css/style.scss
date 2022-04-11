@@ -2,6 +2,8 @@
 ---
 
 @import "jekyll-theme-architect";
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Open+Sans:400,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 
 header {
     padding-top: 80px;
@@ -25,17 +27,17 @@ header h2 {
 
 .inner {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
+#main-content {
+    float: left;
+    width: 100%;
+  }
 
 p { font-family: 'Inconsolata', 'Helvetica';}
 
-#main-content {
-    float: left;
-    width: 80%;
-    }
 
 #main-content img {
 max-width: 100%;
@@ -112,3 +114,68 @@ aside a.blogbutton {
     background: transparent url(../images/blogbutton.png) 0 0 no-repeat;
 }
 
+
+
+/* -------- NAVIGATION BAR STYLE ---------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #FAA916;
+	overflow: hidden;
+	line-height: 20px;
+	vertical-align: middle;
+	font-weight: 600;
+	flex-direction: column;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	margin: 0.5%;
+	padding: 0.75%;	
+	color: #272838;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	border-radius: 5px;
+	background-color: #FBFFFE;
+	color: #272838;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+	flex-direction: column;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.topnav-right a {
+	float: right;
+	margin: 0.5%;
+    margin-right: 30px;
+	padding: 0.75%;
+	color: #FBFFFE;
+	background-color: #01ABAA;
+	border: 1px solid #FBFFFE;
+	border-radius: 5px;
+}
+
+
+/* -------- PANNEL STYLE -------  */
+
+.IntroBackground {
+	margin-top: 0.5%;
+	background: url('../images/back.PNG');
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
+}
+
+.IntroLayer {
+	margin-top: 0.5%;
+	background-color: rgba(250, 169, 22, 0.8);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
+}

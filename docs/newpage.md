@@ -1,9 +1,11 @@
 ---
-layout: default
-title: "Home Page"
-permalink: /homepage/
-toc: true
+layout: page
+title: "User Guide"
+permalink: /user-guide/
 ---
+
+- TOC
+{:toc}
 
 # Test page
 
