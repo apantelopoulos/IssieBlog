@@ -29,9 +29,20 @@ github_username:  jekyll
 show_downloads: true
 
 # Build settings
+paginate: 8
+paginate_path: "/blog/page:num/"
 theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 github:
   windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
