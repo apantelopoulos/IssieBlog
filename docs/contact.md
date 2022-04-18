@@ -4,25 +4,7 @@ title: "Contact"
 permalink: /contact/
 ---
 
-## Contents
-{:.no_toc}
+# General Issues
 
-- TOC
-{:toc}
+If you encounter any problems using or downloading the software, please see the [Gihub Issue](https://github.com/tomcl/issie/issues) page, or [create a new issue](https://github.com/tomcl/issie/issues/new) on the ISSIE GitHub repository. Any feedback and suggestions are also welcome!
 
-## Getting Started
-
-Test test
-
-### Adding Components
-{:.no_toc}
-
-test test 
-
-### Connecting Components
-{:.no_toc}
-
-### Chaning the Wires
-{:.no_toc}
-
-To add content
