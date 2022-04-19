@@ -14,6 +14,29 @@
 {% seo %}
 
     {% include head-custom.html %}
+      <style>
+              
+      #main-content h2 {
+          text-indent: 25px;
+          }
+          #main-content h3 {
+          text-indent: 20px;
+          }
+        #main-content h2::after {
+          content:' ';
+          display: block;
+          border: 0.5px solid #faa916;
+          margin-bottom: 15px;
+          margin-top: -4px;
+      }
+      .inner {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      </style>
+
   </head>
 
   <body>
@@ -22,7 +45,7 @@
       <br><br><br>
       
 
-    <div id="content-wrapper">
+    <div id="content-wrapper" style="margin-top: -50px;">
       <div class="inner clearfix">
         <section id="main-content">
           {{ content }}

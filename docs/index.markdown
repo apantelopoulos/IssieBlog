@@ -31,9 +31,11 @@ The application is mostly written in F#, which gets transpiled to JavaScript via
 {% include module.html 
     image_path = "img/catalogue.gif" 
     title = "Component Library"
-    description = "ISSIE has an extensive and complete library of components available in the 'Catalogue' menu. Components include low-level gates and flipflops as well as larger blocks: RAMs, ROMs, n-bit registers and adders. The lack of HDL-based combinational logic is partly filled by special components: Bus Select (extracts a bit-field), Bus Compare (decodes a min-term of a bus). Components defined as Verilog combinational logic are a likely future addition.
+    description = "ISSIE has an extensive and complete library of components available in the 'Catalogue' menu. Components include low-level gates and flipflops as well as larger blocks: RAMs, ROMs, n-bit registers and adders. The lack of HDL-based combinational logic is partly filled by special components: Bus Select (extracts a bit-field), Bus Compare (decodes a min-term of a bus).
     <br><br>
-    Viewer components are used to (optionally) view simulation waveforms of nodes on subsheets. Wire label components allow any number of nodes on one design sheet to be connected without visible wires." 
+    Viewer components are used to (optionally) view simulation waveforms of nodes on subsheets. Wire label components allow any number of nodes on one design sheet to be connected without visible wires.
+    <br><br> 
+    Under 'THIS PROJECT' you can find all other design sheets of your project as custom components which can be added to your current sheet and replicate the sheet logic." 
 %}
 
 <br><br>
@@ -86,7 +88,7 @@ The application is mostly written in F#, which gets transpiled to JavaScript via
 <br><br>
 
 {% include module.html 
-    image_path="img/verilog.gif" 
+    image_path="img/verilog.png" 
     title="Verilog Output"
     description="Users may convert their ISSIE schematic design into a Verilog file using the 'Write design as verilog' option found in the header bar of the application. This allows great flexibility as ISSIE designs may be used in more complex design tools and other programs that use Verilog; allowing ISSIE to be used as a top-level design that can be further developed if needed. Verilog output for simulation or synthesis is documented as part of the Verilog write process, this includes links to a [YoSys](http://bygone.clairexen.net/yosys/download.html) workflow for synthesis on FPGAs. Imperial College users can download a pre-installed VM for this workflow, the VHDL output is standalone and should work with other synthesis methods." 
 %}
