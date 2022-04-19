@@ -42,7 +42,8 @@ Add the following components to your canvas from the `Catalogue` tab:
 - `GATES` => `And` 
 - `INPUT/OUTPUT` => `Output` => Name: 'OUT', Bits: 1
 
-Now make the appropriate wiring to connect all the components by clicking on one port and dragging the wire to the port you want to connect it to. Connect: 
+Now make the appropriate wiring to connect all the components by clicking on one port and dragging the wire to the port you want to connect it to. 
+**Connect:**
 - Input 'A' to the first input port of the AND gate
 - Input 'B' to the second input port of the AND gate
 - Output 'OUT' to the output port of the AND gate
@@ -82,7 +83,7 @@ Time to increase the complexity of our design and see how we can exploit the fea
 - Add a new 1-bit output `RESULT`   
 - Make all necessary connections to achieve a diagram like the one bellow:
 
-![](../img/userGuide/feat1.png)
+![](../img/userGuide/feat1.PNG)
 
 Again, **simulate the design** and check the output remains correct as you change the values of the 4 inputs
 
