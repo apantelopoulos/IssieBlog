@@ -83,7 +83,7 @@ Time to increase the complexity of our design and see how we can exploit the fea
 - Add a new 1-bit output `RESULT`   
 - Make all necessary connections to achieve a diagram like the one bellow:
 
-![](../img/userGuide/feat1.PNG)
+![](../img/userGuide/features1.png)
 
 Again, **simulate the design** and check the output remains correct as you change the values of the 4 inputs
 
@@ -100,7 +100,7 @@ You can view the shortcuts for all these modifications by clicking on the `edit`
 
 **Let's now look at our improved schematic:**
 
-![](../img/userGuide/feat2.gif)
+![](../img/userGuide/features2.gif)
 
 
 ### Summary

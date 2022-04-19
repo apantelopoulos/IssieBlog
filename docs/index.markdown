@@ -88,7 +88,7 @@ The application is mostly written in F#, which gets transpiled to JavaScript via
 <br><br>
 
 {% include module.html 
-    image_path="img/verilog.png" 
+    image_path="img/verilogOutput.png" 
     title="Verilog Output"
     description="Users may convert their ISSIE schematic design into a Verilog file using the 'Write design as verilog' option found in the header bar of the application. This allows great flexibility as ISSIE designs may be used in more complex design tools and other programs that use Verilog; allowing ISSIE to be used as a top-level design that can be further developed if needed. Verilog output for simulation or synthesis is documented as part of the Verilog write process, this includes links to a [YoSys](http://bygone.clairexen.net/yosys/download.html) workflow for synthesis on FPGAs. Imperial College users can download a pre-installed VM for this workflow, the VHDL output is standalone and should work with other synthesis methods." 
 %}
