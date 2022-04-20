@@ -55,7 +55,7 @@ Your design should look like this:
 
 ### Simulation
 
-Time to simulate our design and see how the output `OUT` changes as we change the two inputs.
+Time to simulate our design and see how the output `OUT` changes as we change the two inputs BLAH.
 
 Click the `Simulation` tab which is located on the top-right corner and then `Start Simulation`. Now you can change the value of the two inputs and see how the value of the output. Try all 4 combinations of inputs: 
 - A=0, B=0  
