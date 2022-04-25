@@ -69,7 +69,9 @@ The application is mostly written in F#, which gets transpiled to JavaScript via
 
 {% include module.html 
     image_path="img/stepSimulation.gif" 
+    
     title="Step Simulation"
+    
     description="Step Simulation allows the user to 'step' or cycle through each clock tick, and view the current design sheet's Output and Viewer component information. It also allows users to view how the state changes in stateful components such as RAM." 
 %}
 

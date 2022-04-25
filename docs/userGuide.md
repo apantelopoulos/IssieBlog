@@ -55,7 +55,7 @@ Your design should look like this:
 
 ### Simulation
 
-Time to simulate our design and see how the output `OUT` changes as we change the two inputs BLAH.
+Time to simulate our design and see how the output `OUT` changes as we change the two inputs.
 
 Click the `Simulation` tab which is located on the top-right corner and then `Start Simulation`. Now you can change the value of the two inputs and see how the value of the output. Try all 4 combinations of inputs: 
 - A=0, B=0  
@@ -114,3 +114,45 @@ You can view the shortcuts for all these modifications by clicking on the `edit`
 
 
 ## Using Custom Components
+
+### Your root schematic
+
+Time now to learn how to use or schematics as cstom components in other design sheets. Here is the idea: The very simple and theoretically useless design we created earlier can be used as a decoder of a 4-bit message to produce a true/false result. Therefore, we are going to create a schematic with an asynchronous-read 4-bit ROM and the schematic we created before as a custom symbol. 
+
+Steps: 
+1. Change the name of the current sheet from `main` to `decoder` (Sheets -> rename)
+2. Add a new sheet and name it `root`
+3. Add to the root sheet:
+  - Asynchronous ROM (`MEMORIES` => `ROM (asynchronous)`). Select 4 bits addressor, 4 bits data and the `Enter data later` option
+  - Your decoder (`THIS PROJECT` => `decoder`)
+  - 1-bit output named 'RESULT' (`INPUT/OUTPUT` => `Output`) 
+  - 4-bit input named 'Addressor' (`INPUT/OUTPUT` => `Input`) 
+4. Using 3 `SplitWire` components (`BUSES` => `SplitWire`) separate the 4-bit ROM output to 4 1-bit wires. (see image below)
+5. Make the appropriate connections to achieve the schematic below
+
+![](../img/userGuide/custom.png)
+
+### Improving the design sheet
+
+It's time to use another cool feature of Issie: Moving ports in custom components. Issie allows you to re-order and change the side of input and output ports of custom components by `CTRL` + `CLICKING ON THE PORT` you want to move.
+
+Let's look how it works in the gif below:
+
+![](../img/userGuide/custom2.gif)
+
+
+### ROM Initialisation
+
+Currently our ROM is empty as we selected the option `Enter Data Later` before. Let's put some values in our ROM.
+
+1. Select the ROM and click on the `Properties` tab
+2. Click on `view/edit memory content`
+3. Change the content of the 16 memory location available by assigning a random 4-bit number to each one
+4. Click `done`
+
+### Simulation
+
+Simulate your design! Change the value of the addressor input and see whether your decoder produces a true or false result for each number you assigned to the ROM. 
+
+## Waveform Simulation
+
