@@ -13,6 +13,7 @@ permalink: /user-guide/
 ## Getting Started
 
 ### Downloading and Running ISSIE
+{:.no_toc}
 
 Start by clicking the [download](https://github.com/tomcl/issie/releases/latest) button on the top-right of your screen. This opens the page of the latest release of ISSIE on GitHub. At the bottom of the page, you can find the latest prebuilt binary for your platform (Windows or Macos). Issie will require in total about 200M of disk space.
 
@@ -22,6 +23,7 @@ Start by clicking the [download](https://github.com/tomcl/issie/releases/latest)
     
 
 ### Creating a New Project
+{:.no_toc}
 
 Once you open Issie you should see two options: `New Project` and `Open Project`. 
   
@@ -33,6 +35,7 @@ Once you open Issie you should see two options: `New Project` and `Open Project`
 This process creates a folder where your project will be stored and the first sheet of your project, called `main`. You can see this by clicking at the `Sheets` selection button.
 
 ### Your first design
+{:.no_toc}
 
 Let's start with a very simple schematic: a simple 2-input AND gate. 
 
@@ -54,6 +57,7 @@ Your design should look like this:
 
 
 ### Simulation
+{:.no_toc}
 
 Time to simulate our design and see how the output `OUT` changes as we change the two inputs.
 
@@ -73,6 +77,7 @@ and check that the output is correct based on the truth table of the AND gate.
 ## Exploiting the ISSIE Features
 
 ### A slightly more complex design
+{:.no_toc}
 
 Time to increase the complexity of our design and see how we can exploit the features of ISSIE to create clean and good-looking schematics.
 
@@ -88,6 +93,7 @@ Time to increase the complexity of our design and see how we can exploit the fea
 Again, **simulate the design** and check the output remains correct as you change the values of the 4 inputs
 
 ### Improving the looking of our design
+{:.no_toc}
 
 Clearly, this is a terrible and hard to understand design. **Let's improve it!** The ISSIE canvas is fully customisable to allow the creation of readable and good-looking schematics. Specifically, we can:
 1. Rotate, Flip and Move around all symbols 
@@ -104,6 +110,7 @@ You can view the shortcuts for all these modifications by clicking on the `edit`
 
 
 ### Summary
+{:.no_toc}
 
 - In the `Catalogue` Menu we can find an extensive and complete library of components (gates, flip-flops, RAMs, ROMs, n-bit registers)
 - We can add any number of components in our sheet and name them as we like
@@ -116,13 +123,14 @@ You can view the shortcuts for all these modifications by clicking on the `edit`
 ## Using Custom Components
 
 ### Your root schematic
+{:.no_toc}
 
 Time now to learn how to use or schematics as cstom components in other design sheets. Here is the idea: The very simple and theoretically useless design we created earlier can be used as a decoder of a 4-bit message to produce a true/false result. Therefore, we are going to create a schematic with an asynchronous-read 4-bit ROM and the schematic we created before as a custom symbol. 
 
 Steps: 
 1. Change the name of the current sheet from `main` to `decoder` (Sheets -> rename)
-2. Add a new sheet and name it `root`
-3. Add to the root sheet:
+2. Add a new sheet and name it `main`
+3. Add to the main sheet:
   - Asynchronous ROM (`MEMORIES` => `ROM (asynchronous)`). Select 4 bits addressor, 4 bits data and the `Enter data later` option
   - Your decoder (`THIS PROJECT` => `decoder`)
   - 1-bit output named 'RESULT' (`INPUT/OUTPUT` => `Output`) 
@@ -133,6 +141,7 @@ Steps:
 ![](../img/userGuide/custom.png)
 
 ### Improving the design sheet
+{:.no_toc}
 
 It's time to use another cool feature of Issie: Moving ports in custom components. Issie allows you to re-order and change the side of input and output ports of custom components by `CTRL` + `CLICKING ON THE PORT` you want to move.
 
@@ -142,6 +151,7 @@ Let's look how it works in the gif below:
 
 
 ### ROM Initialisation
+{:.no_toc}
 
 Currently our ROM is empty as we selected the option `Enter Data Later` before. Let's put some values in our ROM.
 
@@ -151,8 +161,65 @@ Currently our ROM is empty as we selected the option `Enter Data Later` before. 
 4. Click `done`
 
 ### Simulation
+{:.no_toc}
 
 Simulate your design! Change the value of the addressor input and see whether your decoder produces a true or false result for each number you assigned to the ROM. 
 
 ## Waveform Simulation
 
+### Creating a closed loop design
+{:.no_toc}
+
+Let's now make our top-level design a closed-loop one using a custom addressor which will increment every clock cycle. Now, using the waveform simulator we will be able to view the output of our circuit for all memory locations.
+
+To create an addressor which increments every clock cycle we will need:
+- One 4-bit Register (`FLIP FLOPS AND REGISTER` => `Register`)
+  - **NOTE:** All clocked components are implicitly connected to the global clock
+- One 4-bit Adder (`ARITHMETIC` => `N bits adder`)
+- Two Constants (`INPUT/OUTPUT` => `Constant`):
+  - 0b0001
+  - 0b0
+- Two wire labels (`INPUT/OUTPUT` => `Wire Label`)
+  - One for `Cout` of adder
+  - One for `result` 
+  - **NOTE:** Labels are necessary to prevent an unused output from giving an error
+
+Create a schematic like the one below:
+
+![](../img/userGuide/waveform.png)
+
+### Simulating your design
+{:.no_toc}
+
+As soon as you connect everything correctly you should see the `Waveforms >>` button changing to green. You can now simulate your design.
+
+- Click the `Waveforms >>` button
+- Select:
+  - `AROM1.Dout[3:0]`
+  - `REG1.Dout[3:0]`
+  - `RESULT: DECODER1.RESULT`
+- Click `View`
+- Change the data to either `hex` or `bin` to make them more readable
+- Check that the waveform simulator output matches your previous (Step Simulation) results 
+
+![](../img/userGuide/waveform1.png)
+
+
+### Changing your design
+{:.no_toc}
+
+<br>
+**!!! IMPORTANT NOTE:** Before you do anything else, you **MUST** close the waveform simulator. <br> This is done by clicking `Edit list...` and then `Close` **!!!**
+
+<br>
+
+Now add an extra register between your adder and the ROM address (or make any other change you want) and check that the simulation has the expected output.
+
+![](../img/userGuide/waveform2.png)
+
+
+## Now what?
+
+You now know how to use ISSIE to create & simulate digital designs. 
+
+You can now create your designs (from simple circuits to fully functionable CPUs) and either simulate them or extract them as Verilog to use them with other tools.

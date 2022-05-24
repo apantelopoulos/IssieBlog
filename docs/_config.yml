@@ -22,10 +22,10 @@ title: ISSIE
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Discover, Learn & Create with the ISSIE circuit schematic editor!
-baseurl: "/IssieBlog" # the subpath of your site, e.g. /blog
+baseurl: "/issie" # the subpath of your site, e.g. /blog
 url: "https://apantelopoulos.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: tomcl
+github_username:  tomcl
 show_downloads: true
 
 # Build settings
@@ -48,28 +48,9 @@ github:
   windows: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5-win.zip
   macos: https://github.com/tomcl/issie/releases/download/v2.4.5/issie-2.4.5.dmg
   blog: https://github.com/tomcl/issie/wiki/Issie-Blog
-
+  
 markdown: kramdown
 
 kramdown:
   parse_block_html: true
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
